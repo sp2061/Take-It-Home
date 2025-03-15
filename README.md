@@ -5,6 +5,7 @@ FRONTEND SETUP
 npm install
 npm install react
 npm install react-router
+npm install react-bootstrap
 run frontend app- npm run dev
 
 

@@ -1,20 +1,27 @@
 import React from 'react';
-import { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import NavBar from './components/Navbar';
 import HomePage from './pages/HomePage';
-
+import Explore from './pages/Explore';
+import Contact from './pages/Contact';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import './App.css';
+
 function App() {
   return (
     <>
-    <Navbar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
