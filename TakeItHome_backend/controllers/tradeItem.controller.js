@@ -1,8 +1,8 @@
-import Item from "../models/item.model.js";
+import Item from "../models/tradeItem.model.js";
 import mongoose from "mongoose";
 
 //get all items
-export const getItems = async (req, res) => {
+export const getTradeItems = async (req, res) => {
     try {
         const items = await Item.find();
         res.status(200).json({ success: true, data: items });
@@ -14,7 +14,7 @@ export const getItems = async (req, res) => {
 
 
 //create an item
-export const createItems = async (req, res) => {
+export const createTradeItems = async (req, res) => {
     const item = req.body; //user will send this data
  
     if (!item.name || !item.description || !item.category || !item.condition || !item.image) {
@@ -35,7 +35,7 @@ export const createItems = async (req, res) => {
 
 
  //update an item
- export const updateItem = async (req, res) => {
+ export const updateTradeItem = async (req, res) => {
     const { id } = req.params;
     const item = req.body;
 
@@ -52,7 +52,7 @@ export const createItems = async (req, res) => {
 };
 
 //delete an item
-export const deleteItem = async (req, res) => {
+export const deleteTradeItem = async (req, res) => {
     const { id } = req.params;
     if (!mongoose.Types.ObjectId.isValid(id)) {
         return res.status(404).json({ success: false, message: "Invalid Id" });
