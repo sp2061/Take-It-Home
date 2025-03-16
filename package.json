@@ -11,9 +11,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "mongoose": "^8.11.0"
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.11.0",
+    "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
+    "react-router": "^7.3.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
