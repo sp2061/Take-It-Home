@@ -1,17 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-
-// const Login = () => {
-
-//   return (
-//     <div className="home-page">
-//       <h1>This is login page</h1>
-//     </div>
-//   )};
-
-// export default Login;
-
-
-// Login.js:
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 

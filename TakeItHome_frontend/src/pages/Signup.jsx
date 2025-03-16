@@ -1,15 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-
-// const Signup = () => {
-
-//   return (
-//     <div className="home-page">
-//       <h1>This is signup page</h1>
-//     </div>
-//   )};
-
-// export default Signup;
-
 
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
