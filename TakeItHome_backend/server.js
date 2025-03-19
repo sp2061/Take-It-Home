@@ -9,7 +9,7 @@ const app = express();
 // Connect to MongooseDB
 connectDB();
 
-// Middleware
+
 app.use(express.json());
 
 // Routes
