@@ -6,7 +6,7 @@ import tradeItemRoutes from './routes/TradeItem.route.js';
 
 const app = express();
 
-// Connect to MongoDB
+// Connect to MongooseDB
 connectDB();
 
 // Middleware
