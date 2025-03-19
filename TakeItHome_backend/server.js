@@ -7,7 +7,9 @@ import tradeItemRoutes from './routes/TradeItem.route.js';
 const app = express();
 
 // Connect to MongooseDB
+// take it home
 connectDB();
+takeithome();
 
 //TAke it home
 app.use(express.json());
